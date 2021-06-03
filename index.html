@@ -459,6 +459,36 @@
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
         </button>
+        <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form" autocomplete="off">
+          <label class="modal-form-label"><span class="modal-form-label-text">Имя</span>
+            <input class="modal-form-input" type="text" name="name"/>
+            <svg class="modal-form-icon">
+              <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-form-label"><span class="modal-form-label-text">Телефон</span>
+            <input class="modal-form-input" type="tel" name="tel" />
+            <svg class="modal-form-icon">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-form-label"><span class="modal-form-label-text">Почта</span>
+            <input class="modal-form-input" type="email" name="email" />
+            <svg class="modal-form-icon">
+              <use href="./images/sprite.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-form-label"><span class="modal-form-label-text">Комментарии</span>
+            <textarea class="modal-form-textarea" name="comments" placeholder="Введите текст"></textarea>
+            </label>
+          <label class="modal-form-agree">
+            <input class="modal-form-checkbox visually-hidden" type="checkbox" name="agreemant"/>
+            <span class="icon-check"></span>
+            Соглашаюсь с рассылкой и принимаю <a class="modal-form-agree-lihk" href="">Условия договора</a>
+          </label>
+          <button class="modal-form-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
