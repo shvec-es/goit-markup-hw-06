@@ -462,28 +462,34 @@
         <p class="modal-p">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form" autocomplete="off">
           <label class="modal-form-label"><span class="modal-form-label-text">Имя</span>
-            <input class="modal-form-input" type="text" name="name"/>
-            <svg class="modal-form-icon">
-              <use href="./images/sprite.svg#icon-person"></use>
-            </svg>
+            <span class="modal-form-thumb">
+              <input class="modal-form-input" type="text" name="user-name" minlength="3" required/>
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </span>
           </label>
           <label class="modal-form-label"><span class="modal-form-label-text">Телефон</span>
-            <input class="modal-form-input" type="tel" name="tel" />
-            <svg class="modal-form-icon">
-              <use href="./images/sprite.svg#icon-phone"></use>
-            </svg>
+            <span class="modal-form-thumb">
+              <input class="modal-form-input" type="tel" name="user-tel" required/>
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </span>  
           </label>
           <label class="modal-form-label"><span class="modal-form-label-text">Почта</span>
-            <input class="modal-form-input" type="email" name="email" />
-            <svg class="modal-form-icon">
-              <use href="./images/sprite.svg#icon-email"></use>
-            </svg>
+            <span class="modal-form-thumb">
+              <input class="modal-form-input" type="email" name="user-email" />
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </span>  
           </label>
           <label class="modal-form-label"><span class="modal-form-label-text">Комментарии</span>
-            <textarea class="modal-form-textarea" name="comments" placeholder="Введите текст"></textarea>
+            <textarea class="modal-form-textarea" name="user-comments" placeholder="Введите текст"></textarea>
             </label>
           <label class="modal-form-agree">
-            <input class="modal-form-checkbox visually-hidden" type="checkbox" name="agreemant"/>
+            <input class="modal-form-checkbox visually-hidden" type="checkbox" name="agreemant" required/>
             <span class="icon-check"></span>
             Соглашаюсь с рассылкой и принимаю <a class="modal-form-agree-lihk" href="">Условия договора</a>
           </label>
